@@ -38,7 +38,7 @@ return [
     |
     */
 
-    'debug' => env('APP_DEBUG', false),
+    'debug' => env('APP_DEBUG', true),
 
     /*
     |--------------------------------------------------------------------------
@@ -120,9 +120,15 @@ return [
     |
     */
 
-    'log' => env('APP_LOG', 'single'),
-
+    'log' => env('APP_LOG', 'daily'),
+    /**
+     * debug, info, notice, warning, error, critical, alert, emergency
+     */
     'log_level' => env('APP_LOG_LEVEL', 'debug'),
+    /**
+     * 最大保留天数,默认为5天
+     */
+    'log_max_files' => 30,
 
     /*
     |--------------------------------------------------------------------------

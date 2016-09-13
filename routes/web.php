@@ -16,11 +16,8 @@ Route::get('/', function () {
 });
 
 Route::get('/env', function () {
-    dump(env('DB_CONNECTION'));
-
-    $dbConnection = env('DB_CONNECTION');
-    Mail::send('welcome', [
-        'address' => 'liu1084@163.com',
-        'message' => $dbConnection,
-        'title' => 'hello'], function(){});
+    //abort(404);
+    $return = ['code' => 404, 'message' => 'page not found'];
+    echo json_encode($return);
+    abort(404);
 });
