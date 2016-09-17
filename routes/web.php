@@ -10,26 +10,25 @@
 | to using a Closure or controller method. Build something great!
 |
 */
-use App\Article;
 
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/env', function () {
-    //abort(404);
-    echo json_encode($_ENV);
-    Log::debug('show me the environment');
-    Log::info('User failed to login.', ['id' => 1]);
-    //abort(400);
+Route::get('/env', function(\Illuminate\Http\Request $request){
+    return $request->cookie('XSRF-TOKEN');
 });
 
 Route::any('foo', function (\Illuminate\Http\Request $request) {
     echo json_encode($request->cookie('XSRF-TOKEN'));
     echo json_encode($_ENV);
-    Log::debug('response all request');
+    Log::debug('response all request, '. $request->getClientIp());
 });
 
-Route::get('/articles', function(Article $article){
-    echo $article->index();
+
+
+Route::group(['prefix' => 'articles'], function(){
+    Route::get('/', 'ArticleController@index')->name('getAllArticles');
+    Route::get('/{id?}', 'ArticleController@read')->name('getArticleById');
+    Route::post('/new', 'ArticleController@createOne')->name('createArticle');
 });
