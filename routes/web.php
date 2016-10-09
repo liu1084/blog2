@@ -11,24 +11,29 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::group(['middleware' => 'auth'], function () {
+
 });
 
-Route::get('/env', function(\Illuminate\Http\Request $request){
-    return $request->cookie('XSRF-TOKEN');
-});
+Route::any('/', function () {
+    return view('welcome');
+})->middleware('cors');
+
+Route::get('/env', function (\Illuminate\Http\Request $request) {
+    phpinfo();
+})->middleware('auth');
 
 Route::any('foo', function (\Illuminate\Http\Request $request) {
     echo json_encode($request->cookie('XSRF-TOKEN'));
     echo json_encode($_ENV);
-    Log::debug('response all request, '. $request->getClientIp());
+    Log::debug('response all request, ' . $request->getClientIp());
 });
 
 
-
-Route::group(['prefix' => 'articles'], function(){
+Route::group(['prefix' => 'articles'], function () {
     Route::get('/', 'ArticleController@index')->name('getAllArticles');
     Route::get('/{id?}', 'ArticleController@read')->name('getArticleById');
-    Route::post('/new', 'ArticleController@createOne')->name('createArticle');
+    Route::post('/', 'ArticleController@createOne')->name('createArticle');
 });
+
+Route::get('/home', 'HomeController@index');
