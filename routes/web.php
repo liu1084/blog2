@@ -10,6 +10,9 @@
 | to using a Closure or controller method. Build something great!
 |
 */
+use \App\Http\Middleware\Cors;
+use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 
 Route::group(['middleware' => 'auth'], function () {
 
@@ -17,23 +20,45 @@ Route::group(['middleware' => 'auth'], function () {
 
 Route::any('/', function () {
     return view('welcome');
-})->middleware('cors');
+})->middleware('api');
 
-Route::get('/env', function (\Illuminate\Http\Request $request) {
+Route::get('/env', function () {
     phpinfo();
+//    $fileName = 'storage/' . time() . '.jpg';
+//    Image::canvas(200, 300, '#CEE')->greyscale()->text(str_random(100), 50, 0, function($font){
+//        $font->size(150);
+//        $font->color('#000');
+//        $font->align('center');
+//        $font->valign('top');
+//        $font->angle(45);
+//    })->save($fileName);;
+//    return response()->download($fileName);
 })->middleware('auth');
 
-Route::any('foo', function (\Illuminate\Http\Request $request) {
-    echo json_encode($request->cookie('XSRF-TOKEN'));
-    echo json_encode($_ENV);
+Route::any('config', function (Request $request, Response $response) {
     Log::debug('response all request, ' . $request->getClientIp());
-});
+    return (array_merge($_ENV,
+        [
+            'xsrfToken' => $request->cookie('XSRF-TOKEN'),
+            'user' => $request->user(),
+            'token' => $request->session()->token(),
+            'fullUrl' => $request->fullUrl(),
+            'session' => $request->session()->all()
+        ]
+    ));
+
+//    $response->header('ContentType', 'text/plain');
+//    $response->setStatusCode(200);
+//    $response->setContent(['1', 2]);
+//    return response()->download('apk/limiterv1.0.apk', 'limiter.apk');
+
+})->middleware('auth');
 
 
-Route::group(['prefix' => 'articles'], function () {
-    Route::get('/', 'ArticleController@index')->name('getAllArticles');
-    Route::get('/{id?}', 'ArticleController@read')->name('getArticleById');
-    Route::post('/', 'ArticleController@createOne')->name('createArticle');
-});
+
+//声明授权的路由:登录,登出,注册等
+Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+
+Route::resource('articles', 'ArticleController');
