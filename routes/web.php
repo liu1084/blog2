@@ -61,4 +61,5 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
+Route::post('articles/store', 'ArticleController@store')->middleware('auth');
 Route::resource('articles', 'ArticleController');

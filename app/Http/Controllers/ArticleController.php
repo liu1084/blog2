@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Article;
+use Illuminate\Encryption\Encrypter;
 use Illuminate\Http\Request;
+use Intervention\Image\Facades\Image;
+use Ramsey\Uuid\Uuid;
 
 class ArticleController extends Controller
 {
@@ -43,7 +46,36 @@ class ArticleController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+            'title' => 'bail|required|max:255',
+            'content' => 'bail|required',
+            'sticky' => 'number',
+            'parent' => 'number'
+        ]);
+
+        $fileName = 'storage/' . Uuid::uuid4() .  '.jpg';
+        Image::canvas(200, 300, '#CEE')->greyscale()->text($request->input('content'), 50, 0, function($font){
+            $font->size(20);
+            $font->color('#000');
+            $font->align('center');
+            $font->valign('top');
+            $font->angle(45);
+        })->save($fileName);;
+
+        $article = [
+            'title' => $request->input('title'),
+            'content' => $request->input('content'),
+            'background' => $fileName,
+            'user_id' => $request->user()->id,
+            'status' => $request->input('status'),
+            'password' => !empty($request->input('password')) ? encrypt($request->input('password')) : '',
+            'sticky' => !empty($request->input('sticky')) ? time() : 0,
+            'parent' => !empty($request->input('parent')) ? $request->input('parent') : 0,
+            'comment_status' => $request->input('comment_status'),
+            'comment_count' => 0
+        ];
+
+        return $this->articleModel->createOne($article);
     }
 
     /**

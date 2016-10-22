@@ -6,9 +6,22 @@ use Illuminate\Database\Eloquent\Model;
 
 class Article extends Model
 {
+    protected $fillable = [
+        'title',
+        'content',
+        'background',
+        'user_id',
+        'status',
+        'password',
+        'sticky',
+        'parent',
+        'comment_status',
+        'comment_count'
+    ];
+
     public function index(){
         return self::where(['status'=> 'publish'])
-            ->orderBy('order', 'desc')
+            ->orderBy('sticky', 'desc')
             ->orderBy('create_at', 'desc')
             ->orderBy('rating', 'desc')
             ->get();
