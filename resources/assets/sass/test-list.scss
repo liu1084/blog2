@@ -1,0 +1,65 @@
+@import "config/config";
+@import "layouts/test-list";
+
+$border: .5 * $onePx solid #dee3e8;
+$padding: 8 * $onePx;
+$lineHeight: 20 * $onePx;
+$tableWidth: 100%;
+
+.main {
+	@import "common/top";
+
+	#testList {
+		padding: 20 * $onePx 250 * $onePx;
+		table {
+			width: $tableWidth;
+			border: $border;
+			margin: 0 auto;
+			font-size: 12 * $onePx;
+			%td {
+				border: $border;
+				vertical-align: bottom;
+				padding: $padding;
+				line-height: $lineHeight;
+			}
+
+			thead {
+				tr {
+					th {
+						@extend %td;
+						border-bottom-width: 2px;
+						font-weight: 600;
+					}
+				}
+			}
+
+			tbody {
+				tr {
+					td {
+						@extend %td;
+
+						.process-status{
+							@include border-radius(20 *$onePx);
+							height: 15 * $onePx;
+							width: 15 * $onePx;
+							background-color: #bcbcbc;
+							display: inline-block;
+
+							&.success {
+								background-color: #00B83F
+							}
+							&.failed {
+								background-color: #ee5f5b;
+							}
+						}
+					}
+
+				}
+
+				tr:nth-child(odd){
+					background-color: #f5f7f9;
+				}
+			}
+		}
+	}
+}

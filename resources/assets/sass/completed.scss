@@ -1,0 +1,35 @@
+@import "config/config";
+@import "layouts/completed";
+$color: #33ae61;
+
+.main {
+	@import "common/top";
+
+	#endTest {
+		text-align: center;
+		padding: 200 * $onePx 0;
+		.c-ok {
+			height: 60 * $onePx;
+			line-height: 60 * $onePx;
+			position: relative;
+
+			.icon {
+				@include avatar(40 * $onePx, $color);
+				color: #fff;
+				top: 10 * $onePx;
+				left: 50%;
+				@include transform(translate(-50%, 0));
+			}
+
+			.icon-checkmark:before {
+				position: relative;
+				top: 12 * $onePx;
+			}
+		}
+		.c-text {
+			font-size: 12 * $onePx;
+			font-weight: bold;
+			color: $color;
+		}
+	}
+}

@@ -1,0 +1,33 @@
+@import "../config/config";
+
+.main {
+	@include container;
+	.top-section {
+		.steps {
+			@include span(70% no-gutter);
+		}
+
+		.operates{
+			@include span(30% no-gutter);
+		}
+
+	}
+
+	.category {
+		.parameters {
+			li {
+				@include span(25% no-gutter);
+			}
+		}
+	}
+
+	#mobileInfo {
+		.left-section {
+			@include span(70% no-gutter);
+		}
+
+		.right-section {
+			@include span(30% no-gutter);
+		}
+	}
+}
