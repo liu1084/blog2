@@ -22,7 +22,7 @@ class Article extends Model
     public function index(){
         return self::where(['status'=> 'publish'])
             ->orderBy('sticky', 'desc')
-            ->orderBy('create_at', 'desc')
+            ->orderBy('created_at', 'desc')
             ->orderBy('rating', 'desc')
             ->get();
     }

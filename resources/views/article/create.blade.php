@@ -51,3 +51,6 @@
         </form>
     </div>
 @endsection
+<script src="/bower_components/tinymce/tinymce.min.js"></script>
+<script src="/bower_components/tinymce/tinymce.jquery.min.js"></script>
+<script src="/js/article/create.js"></script>

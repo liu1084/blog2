@@ -24,15 +24,6 @@ Route::any('/', function () {
 
 Route::get('/env', function () {
     phpinfo();
-//    $fileName = 'storage/' . time() . '.jpg';
-//    Image::canvas(200, 300, '#CEE')->greyscale()->text(str_random(100), 50, 0, function($font){
-//        $font->size(150);
-//        $font->color('#000');
-//        $font->align('center');
-//        $font->valign('top');
-//        $font->angle(45);
-//    })->save($fileName);;
-//    return response()->download($fileName);
 })->middleware('auth');
 
 Route::any('config', function (Request $request, Response $response) {
