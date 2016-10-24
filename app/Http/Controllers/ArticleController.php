@@ -54,12 +54,12 @@ class ArticleController extends Controller
         ]);
 
         $fileName = 'storage/' . Uuid::uuid4() .  '.jpg';
-        Image::canvas(200, 300, '#CEE')->greyscale()->text($request->input('content'), 50, 0, function($font){
-            $font->size(20);
+        Image::canvas(200, 300, '#CEE')->greyscale()->text($request->input('content'), 0, 0, function($font){
+            $font->file('D:/http/xampp/htdocs/blog/resources/assets/fonts/msyh.ttf');
+            $font->size(12);
             $font->color('#000');
             $font->align('center');
             $font->valign('top');
-            $font->angle(45);
         })->save($fileName);;
 
         $article = [
