@@ -80,6 +80,11 @@
     @yield('content')
 
     <!-- Scripts -->
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/bower_components/handlebars/handlebars.min.js"></script>
+    <script src="/bower_components/highlight/src/highlight.js"></script>
+    <script src="/bower_components/PACE/pace.min.js"></script>
+    <script src="/bower_components/sugar/dist/sugar.min.js"></script>
     <script src="/js/app.js"></script>
 </body>
 </html>

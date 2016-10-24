@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Article;
+use App\Http\Requests\ArticleRequest;
 use Illuminate\Encryption\Encrypter;
 use Illuminate\Http\Request;
 use Intervention\Image\Facades\Image;
@@ -44,15 +45,8 @@ class ArticleController extends Controller
      * @param  \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(ArticleRequest $request)
     {
-        $this->validate($request, [
-            'title' => 'bail|required|max:255',
-            'content' => 'bail|required',
-            'sticky' => 'number',
-            'parent' => 'number'
-        ]);
-
         $fileName = 'storage/' . Uuid::uuid4() .  '.jpg';
         Image::canvas(200, 300, '#CEE')->greyscale()->text($request->input('content'), 0, 0, function($font){
             $font->file('D:/http/xampp/htdocs/blog/resources/assets/fonts/msyh.ttf');

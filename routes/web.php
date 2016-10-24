@@ -20,7 +20,7 @@ Route::any('/', function () {
 
 Route::get('/env', function () {
     phpinfo();
-});
+})->middleware('auth');
 
 Route::any('config', function (Request $request, Response $response) {
     Log::debug('response all request, ' . $request->getClientIp());
