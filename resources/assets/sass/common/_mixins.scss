@@ -1,0 +1,43 @@
+@import "../config/config";
+@import "compass";
+
+@mixin toast($backgroundColor: #000, $width: 200 * $onePx, $height: 140 * $onePx){
+	@include border-radius(5 * $onePx);
+	width: $width;
+	height: $height;
+	opacity: .6;
+	background-color: $backgroundColor;
+	position: absolute;
+	z-index: 2048;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	@include transform(translate(-50%, -50%));
+}
+
+@mixin button($backgroundColor: #ffffff, $height: 30 * $onePx, $width: 80 * $onePx){
+	width: $width;
+	height: $height;
+	border: solid 0.5px #dadee3;
+	opacity: 0.5;
+	text-align: center;
+	font-weight: bold;
+	font-size: 14 * $onePx;
+	@include border-radius(2 * $onePx);
+	cursor: pointer;
+	&.active {
+		background-color: #1663ba;
+		box-shadow: 0 0.5px 1.5px 0 rgba(45, 75, 126, 0.2);
+		color: #fff;
+	}
+}
+
+@mixin avatar($radius: 40 * $onePx, $backgroundColor: #fff) {
+	@include border-radius($radius);
+	height: $radius;
+	width: $radius;
+	background-color: $backgroundColor;
+	display: inline-block;
+	//background: #ffffff url($imageUrl) no-repeat center center transparent;
+}
+

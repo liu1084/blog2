@@ -14,6 +14,8 @@ require('laravel-elixir-vue');
  */
 
 elixir(mix => {
-    mix.sass('app.scss')
-       .webpack('app.js');
+	//mix.sass('**/*.scss')
+	mix.webpack('app.js')
+		.webpack('article/create.js');
+		//.copy('resources/assets/bower_components', 'public/bower_components');
 });
