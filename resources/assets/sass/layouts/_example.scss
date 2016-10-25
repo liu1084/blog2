@@ -1,0 +1,15 @@
+@import "../config/config";
+
+.main {
+	@include container;
+	.top-section {
+		.steps {
+			@include span(70% no-gutter);
+		}
+
+		.operates{
+			@include span(30% no-gutter);
+		}
+
+	}
+}

@@ -1,5 +1,18 @@
 @import "../config/config";
 @import "compass";
+@mixin toast($backgroundColor: #000, $width: 200 * $onePx, $height: 140 * $onePx){
+	@include border-radius(5 * $onePx);
+	width: $width;
+	height: $height;
+	opacity: .6;
+	background-color: $backgroundColor;
+	position: absolute;
+	z-index: 2048;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	@include transform(translate(-50%, -50%));
+}
 
 @mixin button($backgroundColor: #ffffff, $height: 30 * $onePx, $width: 80 * $onePx){
 	width: $width;

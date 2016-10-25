@@ -15,7 +15,7 @@
         <form method="post" action="/articles/store" autocomplete="off">
             <div>
                 <label for="title">title</label>
-                <input id="title" name="title" type="text" value="" />
+                <input id="title" name="title" type="text" value=""/>
             </div>
             <div>
                 <label for="content">content</label>
@@ -32,7 +32,7 @@
             </div>
             <div>
                 <label for="password">password</label>
-                <input id="password" type="password" value="" />
+                <input id="password" type="password" value=""/>
             </div>
             <div>
                 <label for="sticky">sticky on top</label>
@@ -40,17 +40,20 @@
             </div>
             <div>
                 <label for="parent">parent</label>
-                <input id="parent" type="checkbox" value="" />
+                <input id="parent" type="checkbox" value=""/>
             </div>
             <div>
                 <label for="comment_status">comment for the article</label>
-                <input id="comment_status" name="comment_status" type="checkbox" value="open" checked />
+                <input id="comment_status" name="comment_status" type="checkbox" value="open" checked/>
             </div>
             <input type="hidden" name="_token" value="{{csrf_token()}}"/>
-            <input type="submit" value="submit" />
+            <input type="submit" value="submit"/>
         </form>
     </div>
 @endsection
+
+@section('script')
 <script src="/bower_components/tinymce/tinymce.min.js"></script>
 <script src="/bower_components/tinymce/tinymce.jquery.min.js"></script>
-<script src="/js/article/create.js"></script>
+<script src="/js/create.js"></script>
+@endsection

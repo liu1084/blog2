@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>nextui-star</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="nextui-star">
+            <g id="nextui-icon-star">
+                <g id="Page-1">
+                    <g>
+                        <g id="Toggle">
+                            <g id="nextui-icon-star">
+                                <g id="Icon-24px">
+                                    <polygon id="Bounds" points="0 0 23.9606557 0 23.9606557 24 0 24"></polygon>
+                                    <polygon id="Shape" fill="#000000" points="11.9803279 17.27 18.1501967 21 16.5128852 13.97 21.9639344 9.24 14.7857213 8.63 11.9803279 2 9.17493443 8.63 1.99672131 9.24 7.44777049 13.97 5.81045902 21"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
