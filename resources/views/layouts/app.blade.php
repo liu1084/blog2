@@ -9,31 +9,49 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>@yield('title')</title>
 
     <!-- Styles -->
-    <link href="/css/app.css" rel="stylesheet">
-
-    <!-- Scripts -->
-    <script>
-        window.Laravel = <?php echo json_encode([
-                'csrfToken' => csrf_token(),
-        ]); ?>
-    </script>
+    <link href="/assets/bower_components/normalize-css/normalize.css" rel="stylesheet"/>
+    <link href="/assets/bower_components/highlight/src/styles/github-gist.css" rel="stylesheet"/>
+    <link href="/assets/bower_components/PACE/themes/black/pace-theme-minimal.css" rel="stylesheet"/>
+    <link href="/assets/bower_components/tinymce/skins/lightgray/skin.min.css" rel="stylesheet"/>
+    <!-- Current Page css-->
+    @yield('css')
 </head>
 <body>
 
+<header>
+    <ul>
+        <li class="logo blog"></li>
+        <li>Home</li>
+        <li>Lasted</li>
+        <li>News</li>
+        <li>Categories</li>
+        <li>Explore</li>
+        <li>Support</li>
+        <li><input type="text" value="" placeholder="Search post"/></li>
+        <li>
+            <button>Sign in</button>
+        </li>
+        <li>
+            <button>Sign up</button>
+        </li>
+    </ul>
+</header>
+
 @yield('content')
 
+<footer></footer>
+
 <!-- Common Scripts -->
-<script src="/bower_components/jquery/dist/jquery.min.js"></script>
 <script src="/bower_components/handlebars/handlebars.min.js"></script>
 <script src="/bower_components/highlight/src/highlight.js"></script>
+<script src="/bower_components/jquery/dist/jquery.min.js"></script>
 <script src="/bower_components/PACE/pace.min.js"></script>
 <script src="/bower_components/sugar/dist/sugar.min.js"></script>
-<script src="/js/app.js"></script>
 
 <!-- Current Page Scripts -->
-@yield('script')
+@yield('js')
 </body>
 </html>

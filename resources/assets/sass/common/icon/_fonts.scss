@@ -7,7 +7,7 @@
 				"../fonts/icomoon.ttf", ttf,
 				"../fonts/icomoon.woff", woff));
 
-[class^="jim-icon-"], [class*="jim-icon-"] {
+[class^="jim-icon-"], [class*=" jim-icon "] {
 	/* use !important to prevent issues with browser extensions that change fonts */
 	font-family: 'jim-font' !important;
 	speak: none;

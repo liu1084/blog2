@@ -16,6 +16,6 @@ require('laravel-elixir-vue');
 elixir(mix => {
 	//mix.sass('**/*.scss')
 	mix.webpack('app.js')
-		.webpack('article/create.js');
-		//.copy('resources/assets/bower_components', 'public/bower_components');
+		.webpack('article/create.js')
+		.copy('resources/assets/bower_components', 'public/bower_components');
 });
