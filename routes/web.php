@@ -15,8 +15,8 @@ use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 
 Route::any('/', function () {
-    return view('welcome');
-})->middleware('api');
+    return view('home');
+})->name('base');
 
 Route::get('/env', function () {
     phpinfo();
@@ -49,4 +49,5 @@ Auth::routes();
 Route::get('/home', 'HomeController@index');
 
 Route::post('articles/store', 'ArticleController@store')->middleware('auth');
-Route::resource('articles', 'ArticleController');
+Route::get('articles', 'ArticleController@index')->middleware('cors');
+//Route::resource('articles', 'ArticleController');

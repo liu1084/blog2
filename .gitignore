@@ -6,3 +6,5 @@ Homestead.json
 Homestead.yaml
 .env
 resources/assets/.sass-cache
+public/bower_components
+resources/assets/bower_components
