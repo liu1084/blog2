@@ -18,6 +18,6 @@ elixir(mix => {
 	mix.webpack('app.js')
 		//.webpack('home.js')
 		.copy('resources/assets/js/home.js', 'public/home.js')
-		//.copy('resources/assets/bower_components', 'public/bower_components')
+		.copy('resources/assets/bower_components', 'public/bower_components')
 		.webpack('article/create.js');
 });
