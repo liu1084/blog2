@@ -11,7 +11,11 @@
 @endsection
 
 @section('content')
-    <div id="articles"></div>
+    <div id="articles">
+        <ul>
+            <article-item v-for="article in articles" v-bind:article="article"></article-item>
+        </ul>
+    </div>
 @endsection
 
 @section('js')
