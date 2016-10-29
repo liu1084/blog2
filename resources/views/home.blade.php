@@ -7,7 +7,7 @@
 @endif
 
 @section('css')
-    {{--<link href="/bower_components/wookmark/css/main.css" rel="stylesheet"/>--}}
+    <link href="/bower_components/wookmark/css/main.css" rel="stylesheet"/>
 @endsection
 
 @section('content')

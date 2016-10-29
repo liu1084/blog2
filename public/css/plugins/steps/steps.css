@@ -1,0 +1,2776 @@
+/* line 5, ../../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 3, ../../../../resources/assets/sass/common/_global.scss */
+body {
+  font-family: "Microsoft YaHei", "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* line 8, ../../../../resources/assets/sass/common/_global.scss */
+ul, ol, li {
+  list-style: none;
+}
+
+/* line 21, ../../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/susy-2.2.12/sass/susy/language/susy/_box-sizing.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "jim-font";
+  src: url('../../../../fonts/../fonts/icomoon.eot') format('embedded-opentype'), url('../../../../fonts/../fonts/icomoon.svg') format('svg'), url('../../../../fonts/../fonts/icomoon.ttf') format('truetype'), url('../../../../fonts/../fonts/icomoon.woff') format('woff');
+}
+/* line 10, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+[class^="jim-icon-"], [class*=" jim-icon "] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'jim-font' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  position: absolute;
+  top: 0.1875rem;
+  left: 0.125rem;
+  cursor: pointer;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 29, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-nextui-add:before {
+  content: "\e900";
+}
+
+/* line 33, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-nextui-check:before {
+  content: "\e901";
+}
+
+/* line 37, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-nextui-check-circle:before {
+  content: "\e902";
+}
+
+/* line 41, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-nextui-delete:before {
+  content: "\e903";
+}
+
+/* line 45, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-nextui-DisclosureIndicator:before {
+  content: "\eaef";
+}
+
+/* line 49, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-nextui-error-outline:before {
+  content: "\eaf0";
+}
+
+/* line 53, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-nextui-filter:before {
+  content: "\eaf1";
+}
+
+/* line 57, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-nextui-report-problem:before {
+  content: "\eaf2";
+}
+
+/* line 61, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-home:before {
+  content: "\e904";
+}
+
+/* line 65, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-home2:before {
+  content: "\e905";
+}
+
+/* line 69, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-home3:before {
+  content: "\e906";
+}
+
+/* line 73, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-office:before {
+  content: "\e907";
+}
+
+/* line 77, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-newspaper:before {
+  content: "\e908";
+}
+
+/* line 81, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-pencil:before {
+  content: "\e909";
+}
+
+/* line 85, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-pencil2:before {
+  content: "\e90a";
+}
+
+/* line 89, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-quill:before {
+  content: "\e90b";
+}
+
+/* line 93, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-pen:before {
+  content: "\e90c";
+}
+
+/* line 97, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-blog:before {
+  content: "\e90d";
+}
+
+/* line 101, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-eyedropper:before {
+  content: "\e90e";
+}
+
+/* line 105, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-droplet:before {
+  content: "\e90f";
+}
+
+/* line 109, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-paint-format:before {
+  content: "\e910";
+}
+
+/* line 113, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-image:before {
+  content: "\e911";
+}
+
+/* line 117, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-images:before {
+  content: "\e912";
+}
+
+/* line 121, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-camera:before {
+  content: "\e913";
+}
+
+/* line 125, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-headphones:before {
+  content: "\e914";
+}
+
+/* line 129, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-music:before {
+  content: "\e915";
+}
+
+/* line 133, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-play:before {
+  content: "\e916";
+}
+
+/* line 137, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-film:before {
+  content: "\e917";
+}
+
+/* line 141, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-video-camera:before {
+  content: "\e918";
+}
+
+/* line 145, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-dice:before {
+  content: "\e919";
+}
+
+/* line 149, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-pacman:before {
+  content: "\e91a";
+}
+
+/* line 153, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-spades:before {
+  content: "\e91b";
+}
+
+/* line 157, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-clubs:before {
+  content: "\e91c";
+}
+
+/* line 161, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-diamonds:before {
+  content: "\e91d";
+}
+
+/* line 165, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-bullhorn:before {
+  content: "\e91e";
+}
+
+/* line 169, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-connection:before {
+  content: "\e91f";
+}
+
+/* line 173, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-podcast:before {
+  content: "\e920";
+}
+
+/* line 177, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-feed:before {
+  content: "\e921";
+}
+
+/* line 181, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-mic:before {
+  content: "\e922";
+}
+
+/* line 185, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-book:before {
+  content: "\e923";
+}
+
+/* line 189, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-books:before {
+  content: "\e924";
+}
+
+/* line 193, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-library:before {
+  content: "\e925";
+}
+
+/* line 197, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-file-text:before {
+  content: "\e926";
+}
+
+/* line 201, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-profile:before {
+  content: "\e927";
+}
+
+/* line 205, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-file-empty:before {
+  content: "\e928";
+}
+
+/* line 209, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-files-empty:before {
+  content: "\e929";
+}
+
+/* line 213, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-file-text2:before {
+  content: "\e92a";
+}
+
+/* line 217, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-file-picture:before {
+  content: "\e92b";
+}
+
+/* line 221, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-file-music:before {
+  content: "\e92c";
+}
+
+/* line 225, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-file-play:before {
+  content: "\e92d";
+}
+
+/* line 229, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-file-video:before {
+  content: "\e92e";
+}
+
+/* line 233, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-file-zip:before {
+  content: "\e92f";
+}
+
+/* line 237, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-copy:before {
+  content: "\e930";
+}
+
+/* line 241, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-paste:before {
+  content: "\e931";
+}
+
+/* line 245, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-stack:before {
+  content: "\e932";
+}
+
+/* line 249, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-folder:before {
+  content: "\e933";
+}
+
+/* line 253, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-folder-open:before {
+  content: "\e934";
+}
+
+/* line 257, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-folder-plus:before {
+  content: "\e935";
+}
+
+/* line 261, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-folder-minus:before {
+  content: "\e936";
+}
+
+/* line 265, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-folder-download:before {
+  content: "\e937";
+}
+
+/* line 269, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-folder-upload:before {
+  content: "\e938";
+}
+
+/* line 273, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-price-tag:before {
+  content: "\e939";
+}
+
+/* line 277, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-price-tags:before {
+  content: "\e93a";
+}
+
+/* line 281, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-barcode:before {
+  content: "\e93b";
+}
+
+/* line 285, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-qrcode:before {
+  content: "\e93c";
+}
+
+/* line 289, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-ticket:before {
+  content: "\e93d";
+}
+
+/* line 293, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-cart:before {
+  content: "\e93e";
+}
+
+/* line 297, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-coin-dollar:before {
+  content: "\e93f";
+}
+
+/* line 301, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-coin-euro:before {
+  content: "\e940";
+}
+
+/* line 305, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-coin-pound:before {
+  content: "\e941";
+}
+
+/* line 309, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-coin-yen:before {
+  content: "\e942";
+}
+
+/* line 313, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-credit-card:before {
+  content: "\e943";
+}
+
+/* line 317, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-calculator:before {
+  content: "\e944";
+}
+
+/* line 321, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-lifebuoy:before {
+  content: "\e945";
+}
+
+/* line 325, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-phone:before {
+  content: "\e946";
+}
+
+/* line 329, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-phone-hang-up:before {
+  content: "\e947";
+}
+
+/* line 333, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-address-book:before {
+  content: "\e948";
+}
+
+/* line 337, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-envelop:before {
+  content: "\e949";
+}
+
+/* line 341, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-pushpin:before {
+  content: "\e94a";
+}
+
+/* line 345, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-location:before {
+  content: "\e94b";
+}
+
+/* line 349, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-location2:before {
+  content: "\e94c";
+}
+
+/* line 353, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-compass:before {
+  content: "\e94d";
+}
+
+/* line 357, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-compass2:before {
+  content: "\e94e";
+}
+
+/* line 361, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-map:before {
+  content: "\e94f";
+}
+
+/* line 365, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-map2:before {
+  content: "\e950";
+}
+
+/* line 369, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-history:before {
+  content: "\e951";
+}
+
+/* line 373, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-clock:before {
+  content: "\e952";
+}
+
+/* line 377, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-clock2:before {
+  content: "\e953";
+}
+
+/* line 381, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-alarm:before {
+  content: "\e954";
+}
+
+/* line 385, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-bell:before {
+  content: "\e955";
+}
+
+/* line 389, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-stopwatch:before {
+  content: "\e956";
+}
+
+/* line 393, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-calendar:before {
+  content: "\e957";
+}
+
+/* line 397, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-printer:before {
+  content: "\e958";
+}
+
+/* line 401, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-keyboard:before {
+  content: "\e959";
+}
+
+/* line 405, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-display:before {
+  content: "\e95a";
+}
+
+/* line 409, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-laptop:before {
+  content: "\e95b";
+}
+
+/* line 413, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-mobile:before {
+  content: "\e95c";
+}
+
+/* line 417, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-mobile2:before {
+  content: "\e95d";
+}
+
+/* line 421, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-tablet:before {
+  content: "\e95e";
+}
+
+/* line 425, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-tv:before {
+  content: "\e95f";
+}
+
+/* line 429, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-drawer:before {
+  content: "\e960";
+}
+
+/* line 433, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-drawer2:before {
+  content: "\e961";
+}
+
+/* line 437, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-box-add:before {
+  content: "\e962";
+}
+
+/* line 441, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-box-remove:before {
+  content: "\e963";
+}
+
+/* line 445, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-download:before {
+  content: "\e964";
+}
+
+/* line 449, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-upload:before {
+  content: "\e965";
+}
+
+/* line 453, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-floppy-disk:before {
+  content: "\e966";
+}
+
+/* line 457, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-drive:before {
+  content: "\e967";
+}
+
+/* line 461, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-database:before {
+  content: "\e968";
+}
+
+/* line 465, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-undo:before {
+  content: "\e969";
+}
+
+/* line 469, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-redo:before {
+  content: "\e96a";
+}
+
+/* line 473, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-undo2:before {
+  content: "\e96b";
+}
+
+/* line 477, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-redo2:before {
+  content: "\e96c";
+}
+
+/* line 481, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-forward:before {
+  content: "\e96d";
+}
+
+/* line 485, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-reply:before {
+  content: "\e96e";
+}
+
+/* line 489, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-bubble:before {
+  content: "\e96f";
+}
+
+/* line 493, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-bubbles:before {
+  content: "\e970";
+}
+
+/* line 497, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-bubbles2:before {
+  content: "\e971";
+}
+
+/* line 501, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-bubble2:before {
+  content: "\e972";
+}
+
+/* line 505, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-bubbles3:before {
+  content: "\e973";
+}
+
+/* line 509, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-bubbles4:before {
+  content: "\e974";
+}
+
+/* line 513, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-user:before {
+  content: "\e975";
+}
+
+/* line 517, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-users:before {
+  content: "\e976";
+}
+
+/* line 521, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-user-plus:before {
+  content: "\e977";
+}
+
+/* line 525, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-user-minus:before {
+  content: "\e978";
+}
+
+/* line 529, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-user-check:before {
+  content: "\e979";
+}
+
+/* line 533, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-user-tie:before {
+  content: "\e97a";
+}
+
+/* line 537, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-quotes-left:before {
+  content: "\e97b";
+}
+
+/* line 541, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-quotes-right:before {
+  content: "\e97c";
+}
+
+/* line 545, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-hour-glass:before {
+  content: "\e97d";
+}
+
+/* line 549, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-spinner:before {
+  content: "\e97e";
+}
+
+/* line 553, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-spinner2:before {
+  content: "\e97f";
+}
+
+/* line 557, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-spinner3:before {
+  content: "\e980";
+}
+
+/* line 561, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-spinner4:before {
+  content: "\e981";
+}
+
+/* line 565, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-spinner5:before {
+  content: "\e982";
+}
+
+/* line 569, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-spinner6:before {
+  content: "\e983";
+}
+
+/* line 573, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-spinner7:before {
+  content: "\e984";
+}
+
+/* line 577, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-spinner8:before {
+  content: "\e985";
+}
+
+/* line 581, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-spinner9:before {
+  content: "\e986";
+}
+
+/* line 585, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-spinner10:before {
+  content: "\e987";
+}
+
+/* line 589, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-spinner11:before {
+  content: "\e988";
+}
+
+/* line 593, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-binoculars:before {
+  content: "\e989";
+}
+
+/* line 597, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-search:before {
+  content: "\e98a";
+}
+
+/* line 601, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-zoom-in:before {
+  content: "\e98b";
+}
+
+/* line 605, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-zoom-out:before {
+  content: "\e98c";
+}
+
+/* line 609, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-enlarge:before {
+  content: "\e98d";
+}
+
+/* line 613, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-shrink:before {
+  content: "\e98e";
+}
+
+/* line 617, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-enlarge2:before {
+  content: "\e98f";
+}
+
+/* line 621, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-shrink2:before {
+  content: "\e990";
+}
+
+/* line 625, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-key:before {
+  content: "\e991";
+}
+
+/* line 629, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-key2:before {
+  content: "\e992";
+}
+
+/* line 633, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-lock:before {
+  content: "\e993";
+}
+
+/* line 637, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-unlocked:before {
+  content: "\e994";
+}
+
+/* line 641, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-wrench:before {
+  content: "\e995";
+}
+
+/* line 645, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-equalizer:before {
+  content: "\e996";
+}
+
+/* line 649, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-equalizer2:before {
+  content: "\e997";
+}
+
+/* line 653, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-cog:before {
+  content: "\e998";
+}
+
+/* line 657, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-cogs:before {
+  content: "\e999";
+}
+
+/* line 661, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-hammer:before {
+  content: "\e99a";
+}
+
+/* line 665, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-magic-wand:before {
+  content: "\e99b";
+}
+
+/* line 669, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-aid-kit:before {
+  content: "\e99c";
+}
+
+/* line 673, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-bug:before {
+  content: "\e99d";
+}
+
+/* line 677, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-pie-chart:before {
+  content: "\e99e";
+}
+
+/* line 681, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-stats-dots:before {
+  content: "\e99f";
+}
+
+/* line 685, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-stats-bars:before {
+  content: "\e9a0";
+}
+
+/* line 689, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-stats-bars2:before {
+  content: "\e9a1";
+}
+
+/* line 693, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-trophy:before {
+  content: "\e9a2";
+}
+
+/* line 697, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-gift:before {
+  content: "\e9a3";
+}
+
+/* line 701, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-glass:before {
+  content: "\e9a4";
+}
+
+/* line 705, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-glass2:before {
+  content: "\e9a5";
+}
+
+/* line 709, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-mug:before {
+  content: "\e9a6";
+}
+
+/* line 713, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-spoon-knife:before {
+  content: "\e9a7";
+}
+
+/* line 717, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-leaf:before {
+  content: "\e9a8";
+}
+
+/* line 721, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-rocket:before {
+  content: "\e9a9";
+}
+
+/* line 725, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-meter:before {
+  content: "\e9aa";
+}
+
+/* line 729, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-meter2:before {
+  content: "\e9ab";
+}
+
+/* line 733, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-hammer2:before {
+  content: "\e9ac";
+}
+
+/* line 737, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-fire:before {
+  content: "\e9ad";
+}
+
+/* line 741, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-lab:before {
+  content: "\e9ae";
+}
+
+/* line 745, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-magnet:before {
+  content: "\e9af";
+}
+
+/* line 749, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-bin:before {
+  content: "\e9b0";
+}
+
+/* line 753, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-bin2:before {
+  content: "\e9b1";
+}
+
+/* line 757, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-briefcase:before {
+  content: "\e9b2";
+}
+
+/* line 761, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-airplane:before {
+  content: "\e9b3";
+}
+
+/* line 765, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-truck:before {
+  content: "\e9b4";
+}
+
+/* line 769, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-road:before {
+  content: "\e9b5";
+}
+
+/* line 773, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-accessibility:before {
+  content: "\e9b6";
+}
+
+/* line 777, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-target:before {
+  content: "\e9b7";
+}
+
+/* line 781, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-shield:before {
+  content: "\e9b8";
+}
+
+/* line 785, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-power:before {
+  content: "\e9b9";
+}
+
+/* line 789, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-switch:before {
+  content: "\e9ba";
+}
+
+/* line 793, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-power-cord:before {
+  content: "\e9bb";
+}
+
+/* line 797, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-clipboard:before {
+  content: "\e9bc";
+}
+
+/* line 801, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-list-numbered:before {
+  content: "\e9bd";
+}
+
+/* line 805, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-list:before {
+  content: "\e9be";
+}
+
+/* line 809, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-list2:before {
+  content: "\e9bf";
+}
+
+/* line 813, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-tree:before {
+  content: "\e9c0";
+}
+
+/* line 817, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-menu:before {
+  content: "\e9c1";
+}
+
+/* line 821, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-menu2:before {
+  content: "\e9c2";
+}
+
+/* line 825, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-menu3:before {
+  content: "\e9c3";
+}
+
+/* line 829, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-menu4:before {
+  content: "\e9c4";
+}
+
+/* line 833, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-cloud:before {
+  content: "\e9c5";
+}
+
+/* line 837, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-cloud-download:before {
+  content: "\e9c6";
+}
+
+/* line 841, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-cloud-upload:before {
+  content: "\e9c7";
+}
+
+/* line 845, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-cloud-check:before {
+  content: "\e9c8";
+}
+
+/* line 849, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-download2:before {
+  content: "\e9c9";
+}
+
+/* line 853, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-upload2:before {
+  content: "\e9ca";
+}
+
+/* line 857, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-download3:before {
+  content: "\e9cb";
+}
+
+/* line 861, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-upload3:before {
+  content: "\e9cc";
+}
+
+/* line 865, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-sphere:before {
+  content: "\e9cd";
+}
+
+/* line 869, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-earth:before {
+  content: "\e9ce";
+}
+
+/* line 873, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-link:before {
+  content: "\e9cf";
+}
+
+/* line 877, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-flag:before {
+  content: "\e9d0";
+}
+
+/* line 881, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-attachment:before {
+  content: "\e9d1";
+}
+
+/* line 885, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-eye:before {
+  content: "\e9d2";
+}
+
+/* line 889, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-eye-plus:before {
+  content: "\e9d3";
+}
+
+/* line 893, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-eye-minus:before {
+  content: "\e9d4";
+}
+
+/* line 897, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-eye-blocked:before {
+  content: "\e9d5";
+}
+
+/* line 901, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-bookmark:before {
+  content: "\e9d6";
+}
+
+/* line 905, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-bookmarks:before {
+  content: "\e9d7";
+}
+
+/* line 909, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-sun:before {
+  content: "\e9d8";
+}
+
+/* line 913, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-contrast:before {
+  content: "\e9d9";
+}
+
+/* line 917, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-brightness-contrast:before {
+  content: "\e9da";
+}
+
+/* line 921, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-star-empty:before {
+  content: "\e9db";
+}
+
+/* line 925, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-star-half:before {
+  content: "\e9dc";
+}
+
+/* line 929, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-star-full:before {
+  content: "\e9dd";
+}
+
+/* line 933, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-heart:before {
+  content: "\e9de";
+}
+
+/* line 937, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-heart-broken:before {
+  content: "\e9df";
+}
+
+/* line 941, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-man:before {
+  content: "\e9e0";
+}
+
+/* line 945, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-woman:before {
+  content: "\e9e1";
+}
+
+/* line 949, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-man-woman:before {
+  content: "\e9e2";
+}
+
+/* line 953, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-happy:before {
+  content: "\e9e3";
+}
+
+/* line 957, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-happy2:before {
+  content: "\e9e4";
+}
+
+/* line 961, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-smile:before {
+  content: "\e9e5";
+}
+
+/* line 965, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-smile2:before {
+  content: "\e9e6";
+}
+
+/* line 969, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-tongue:before {
+  content: "\e9e7";
+}
+
+/* line 973, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-tongue2:before {
+  content: "\e9e8";
+}
+
+/* line 977, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-sad:before {
+  content: "\e9e9";
+}
+
+/* line 981, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-sad2:before {
+  content: "\e9ea";
+}
+
+/* line 985, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-wink:before {
+  content: "\e9eb";
+}
+
+/* line 989, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-wink2:before {
+  content: "\e9ec";
+}
+
+/* line 993, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-grin:before {
+  content: "\e9ed";
+}
+
+/* line 997, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-grin2:before {
+  content: "\e9ee";
+}
+
+/* line 1001, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-cool:before {
+  content: "\e9ef";
+}
+
+/* line 1005, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-cool2:before {
+  content: "\e9f0";
+}
+
+/* line 1009, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-angry:before {
+  content: "\e9f1";
+}
+
+/* line 1013, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-angry2:before {
+  content: "\e9f2";
+}
+
+/* line 1017, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-evil:before {
+  content: "\e9f3";
+}
+
+/* line 1021, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-evil2:before {
+  content: "\e9f4";
+}
+
+/* line 1025, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-shocked:before {
+  content: "\e9f5";
+}
+
+/* line 1029, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-shocked2:before {
+  content: "\e9f6";
+}
+
+/* line 1033, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-baffled:before {
+  content: "\e9f7";
+}
+
+/* line 1037, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-baffled2:before {
+  content: "\e9f8";
+}
+
+/* line 1041, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-confused:before {
+  content: "\e9f9";
+}
+
+/* line 1045, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-confused2:before {
+  content: "\e9fa";
+}
+
+/* line 1049, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-neutral:before {
+  content: "\e9fb";
+}
+
+/* line 1053, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-neutral2:before {
+  content: "\e9fc";
+}
+
+/* line 1057, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-hipster:before {
+  content: "\e9fd";
+}
+
+/* line 1061, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-hipster2:before {
+  content: "\e9fe";
+}
+
+/* line 1065, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-wondering:before {
+  content: "\e9ff";
+}
+
+/* line 1069, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-wondering2:before {
+  content: "\ea00";
+}
+
+/* line 1073, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-sleepy:before {
+  content: "\ea01";
+}
+
+/* line 1077, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-sleepy2:before {
+  content: "\ea02";
+}
+
+/* line 1081, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-frustrated:before {
+  content: "\ea03";
+}
+
+/* line 1085, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-frustrated2:before {
+  content: "\ea04";
+}
+
+/* line 1089, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-crying:before {
+  content: "\ea05";
+}
+
+/* line 1093, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-crying2:before {
+  content: "\ea06";
+}
+
+/* line 1097, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-point-up:before {
+  content: "\ea07";
+}
+
+/* line 1101, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-point-right:before {
+  content: "\ea08";
+}
+
+/* line 1105, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-point-down:before {
+  content: "\ea09";
+}
+
+/* line 1109, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-point-left:before {
+  content: "\ea0a";
+}
+
+/* line 1113, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-warning:before {
+  content: "\ea0b";
+}
+
+/* line 1117, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-notification:before {
+  content: "\ea0c";
+}
+
+/* line 1121, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-question:before {
+  content: "\ea0d";
+}
+
+/* line 1125, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-plus:before {
+  content: "\ea0e";
+}
+
+/* line 1129, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-minus:before {
+  content: "\ea0f";
+}
+
+/* line 1133, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-info:before {
+  content: "\ea10";
+}
+
+/* line 1137, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-cancel-circle:before {
+  content: "\ea11";
+}
+
+/* line 1141, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-blocked:before {
+  content: "\ea12";
+}
+
+/* line 1145, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-cross:before {
+  content: "\ea13";
+}
+
+/* line 1149, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-checkmark:before {
+  content: "\ea14";
+}
+
+/* line 1153, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-checkmark2:before {
+  content: "\ea15";
+}
+
+/* line 1157, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-spell-check:before {
+  content: "\ea16";
+}
+
+/* line 1161, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-enter:before {
+  content: "\ea17";
+}
+
+/* line 1165, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-exit:before {
+  content: "\ea18";
+}
+
+/* line 1169, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-play2:before {
+  content: "\ea19";
+}
+
+/* line 1173, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-pause:before {
+  content: "\ea1a";
+}
+
+/* line 1177, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-stop:before {
+  content: "\ea1b";
+}
+
+/* line 1181, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-previous:before {
+  content: "\ea1c";
+}
+
+/* line 1185, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-next:before {
+  content: "\ea1d";
+}
+
+/* line 1189, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-backward:before {
+  content: "\ea1e";
+}
+
+/* line 1193, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-forward2:before {
+  content: "\ea1f";
+}
+
+/* line 1197, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-play3:before {
+  content: "\ea20";
+}
+
+/* line 1201, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-pause2:before {
+  content: "\ea21";
+}
+
+/* line 1205, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-stop2:before {
+  content: "\ea22";
+}
+
+/* line 1209, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-backward2:before {
+  content: "\ea23";
+}
+
+/* line 1213, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-forward3:before {
+  content: "\ea24";
+}
+
+/* line 1217, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-first:before {
+  content: "\ea25";
+}
+
+/* line 1221, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-last:before {
+  content: "\ea26";
+}
+
+/* line 1225, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-previous2:before {
+  content: "\ea27";
+}
+
+/* line 1229, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-next2:before {
+  content: "\ea28";
+}
+
+/* line 1233, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-eject:before {
+  content: "\ea29";
+}
+
+/* line 1237, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-volume-high:before {
+  content: "\ea2a";
+}
+
+/* line 1241, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-volume-medium:before {
+  content: "\ea2b";
+}
+
+/* line 1245, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-volume-low:before {
+  content: "\ea2c";
+}
+
+/* line 1249, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-volume-mute:before {
+  content: "\ea2d";
+}
+
+/* line 1253, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-volume-mute2:before {
+  content: "\ea2e";
+}
+
+/* line 1257, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-volume-increase:before {
+  content: "\ea2f";
+}
+
+/* line 1261, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-volume-decrease:before {
+  content: "\ea30";
+}
+
+/* line 1265, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-loop:before {
+  content: "\ea31";
+}
+
+/* line 1269, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-loop2:before {
+  content: "\ea32";
+}
+
+/* line 1273, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-infinite:before {
+  content: "\ea33";
+}
+
+/* line 1277, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-shuffle:before {
+  content: "\ea34";
+}
+
+/* line 1281, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-arrow-up-left:before {
+  content: "\ea35";
+}
+
+/* line 1285, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-arrow-up:before {
+  content: "\ea36";
+}
+
+/* line 1289, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-arrow-up-right:before {
+  content: "\ea37";
+}
+
+/* line 1293, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-arrow-right:before {
+  content: "\ea38";
+}
+
+/* line 1297, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-arrow-down-right:before {
+  content: "\ea39";
+}
+
+/* line 1301, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-arrow-down:before {
+  content: "\ea3a";
+}
+
+/* line 1305, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-arrow-down-left:before {
+  content: "\ea3b";
+}
+
+/* line 1309, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-arrow-left:before {
+  content: "\ea3c";
+}
+
+/* line 1313, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-arrow-up-left2:before {
+  content: "\ea3d";
+}
+
+/* line 1317, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-arrow-up2:before {
+  content: "\ea3e";
+}
+
+/* line 1321, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-arrow-up-right2:before {
+  content: "\ea3f";
+}
+
+/* line 1325, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-arrow-right2:before {
+  content: "\ea40";
+}
+
+/* line 1329, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-arrow-down-right2:before {
+  content: "\ea41";
+}
+
+/* line 1333, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-arrow-down2:before {
+  content: "\ea42";
+}
+
+/* line 1337, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-arrow-down-left2:before {
+  content: "\ea43";
+}
+
+/* line 1341, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-arrow-left2:before {
+  content: "\ea44";
+}
+
+/* line 1345, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-circle-up:before {
+  content: "\ea45";
+}
+
+/* line 1349, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-circle-right:before {
+  content: "\ea46";
+}
+
+/* line 1353, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-circle-down:before {
+  content: "\ea47";
+}
+
+/* line 1357, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-circle-left:before {
+  content: "\ea48";
+}
+
+/* line 1361, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-tab:before {
+  content: "\ea49";
+}
+
+/* line 1365, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-move-up:before {
+  content: "\ea4a";
+}
+
+/* line 1369, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-move-down:before {
+  content: "\ea4b";
+}
+
+/* line 1373, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-sort-alpha-asc:before {
+  content: "\ea4c";
+}
+
+/* line 1377, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-sort-alpha-desc:before {
+  content: "\ea4d";
+}
+
+/* line 1381, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-sort-numeric-asc:before {
+  content: "\ea4e";
+}
+
+/* line 1385, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-sort-numberic-desc:before {
+  content: "\ea4f";
+}
+
+/* line 1389, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-sort-amount-asc:before {
+  content: "\ea50";
+}
+
+/* line 1393, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-sort-amount-desc:before {
+  content: "\ea51";
+}
+
+/* line 1397, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-command:before {
+  content: "\ea52";
+}
+
+/* line 1401, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-shift:before {
+  content: "\ea53";
+}
+
+/* line 1405, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-ctrl:before {
+  content: "\ea54";
+}
+
+/* line 1409, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-opt:before {
+  content: "\ea55";
+}
+
+/* line 1413, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-checkbox-checked:before {
+  content: "\ea56";
+}
+
+/* line 1417, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-checkbox-unchecked:before {
+  content: "\ea57";
+}
+
+/* line 1421, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-radio-checked:before {
+  content: "\ea58";
+}
+
+/* line 1425, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-radio-checked2:before {
+  content: "\ea59";
+}
+
+/* line 1429, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-radio-unchecked:before {
+  content: "\ea5a";
+}
+
+/* line 1433, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-crop:before {
+  content: "\ea5b";
+}
+
+/* line 1437, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-make-group:before {
+  content: "\ea5c";
+}
+
+/* line 1441, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-ungroup:before {
+  content: "\ea5d";
+}
+
+/* line 1445, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-scissors:before {
+  content: "\ea5e";
+}
+
+/* line 1449, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-filter:before {
+  content: "\ea5f";
+}
+
+/* line 1453, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-font:before {
+  content: "\ea60";
+}
+
+/* line 1457, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-ligature:before {
+  content: "\ea61";
+}
+
+/* line 1461, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-ligature2:before {
+  content: "\ea62";
+}
+
+/* line 1465, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-text-height:before {
+  content: "\ea63";
+}
+
+/* line 1469, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-text-width:before {
+  content: "\ea64";
+}
+
+/* line 1473, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-font-size:before {
+  content: "\ea65";
+}
+
+/* line 1477, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-bold:before {
+  content: "\ea66";
+}
+
+/* line 1481, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-underline:before {
+  content: "\ea67";
+}
+
+/* line 1485, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-italic:before {
+  content: "\ea68";
+}
+
+/* line 1489, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-strikethrough:before {
+  content: "\ea69";
+}
+
+/* line 1493, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-omega:before {
+  content: "\ea6a";
+}
+
+/* line 1497, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-sigma:before {
+  content: "\ea6b";
+}
+
+/* line 1501, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-page-break:before {
+  content: "\ea6c";
+}
+
+/* line 1505, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-superscript:before {
+  content: "\ea6d";
+}
+
+/* line 1509, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-subscript:before {
+  content: "\ea6e";
+}
+
+/* line 1513, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-superscript2:before {
+  content: "\ea6f";
+}
+
+/* line 1517, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-subscript2:before {
+  content: "\ea70";
+}
+
+/* line 1521, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-text-color:before {
+  content: "\ea71";
+}
+
+/* line 1525, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-pagebreak:before {
+  content: "\ea72";
+}
+
+/* line 1529, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-clear-formatting:before {
+  content: "\ea73";
+}
+
+/* line 1533, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-table:before {
+  content: "\ea74";
+}
+
+/* line 1537, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-table2:before {
+  content: "\ea75";
+}
+
+/* line 1541, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-insert-template:before {
+  content: "\ea76";
+}
+
+/* line 1545, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-pilcrow:before {
+  content: "\ea77";
+}
+
+/* line 1549, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-ltr:before {
+  content: "\ea78";
+}
+
+/* line 1553, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-rtl:before {
+  content: "\ea79";
+}
+
+/* line 1557, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-section:before {
+  content: "\ea7a";
+}
+
+/* line 1561, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-paragraph-left:before {
+  content: "\ea7b";
+}
+
+/* line 1565, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-paragraph-center:before {
+  content: "\ea7c";
+}
+
+/* line 1569, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-paragraph-right:before {
+  content: "\ea7d";
+}
+
+/* line 1573, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-paragraph-justify:before {
+  content: "\ea7e";
+}
+
+/* line 1577, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-indent-increase:before {
+  content: "\ea7f";
+}
+
+/* line 1581, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-indent-decrease:before {
+  content: "\ea80";
+}
+
+/* line 1585, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-share:before {
+  content: "\ea81";
+}
+
+/* line 1589, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-new-tab:before {
+  content: "\ea82";
+}
+
+/* line 1593, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-embed:before {
+  content: "\ea83";
+}
+
+/* line 1597, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-embed2:before {
+  content: "\ea84";
+}
+
+/* line 1601, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-terminal:before {
+  content: "\ea85";
+}
+
+/* line 1605, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-share2:before {
+  content: "\ea86";
+}
+
+/* line 1609, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-mail:before {
+  content: "\ea87";
+}
+
+/* line 1613, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-mail2:before {
+  content: "\ea88";
+}
+
+/* line 1617, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-mail3:before {
+  content: "\ea89";
+}
+
+/* line 1621, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-mail4:before {
+  content: "\ea8a";
+}
+
+/* line 1625, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-amazon:before {
+  content: "\ea8b";
+}
+
+/* line 1629, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-google:before {
+  content: "\ea8c";
+}
+
+/* line 1633, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-google2:before {
+  content: "\ea8d";
+}
+
+/* line 1637, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-google3:before {
+  content: "\ea8e";
+}
+
+/* line 1641, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-google-plus:before {
+  content: "\ea8f";
+}
+
+/* line 1645, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-google-plus2:before {
+  content: "\ea90";
+}
+
+/* line 1649, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-google-plus3:before {
+  content: "\ea91";
+}
+
+/* line 1653, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-hangouts:before {
+  content: "\ea92";
+}
+
+/* line 1657, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-google-drive:before {
+  content: "\ea93";
+}
+
+/* line 1661, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-facebook:before {
+  content: "\ea94";
+}
+
+/* line 1665, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-facebook2:before {
+  content: "\ea95";
+}
+
+/* line 1669, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-instagram:before {
+  content: "\ea96";
+}
+
+/* line 1673, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-whatsapp:before {
+  content: "\ea97";
+}
+
+/* line 1677, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-spotify:before {
+  content: "\ea98";
+}
+
+/* line 1681, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-telegram:before {
+  content: "\ea99";
+}
+
+/* line 1685, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-twitter:before {
+  content: "\ea9a";
+}
+
+/* line 1689, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-vine:before {
+  content: "\ea9b";
+}
+
+/* line 1693, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-vk:before {
+  content: "\ea9c";
+}
+
+/* line 1697, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-renren:before {
+  content: "\ea9d";
+}
+
+/* line 1701, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-sina-weibo:before {
+  content: "\ea9e";
+}
+
+/* line 1705, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-rss:before {
+  content: "\ea9f";
+}
+
+/* line 1709, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-rss2:before {
+  content: "\eaa0";
+}
+
+/* line 1713, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-youtube:before {
+  content: "\eaa1";
+}
+
+/* line 1717, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-youtube2:before {
+  content: "\eaa2";
+}
+
+/* line 1721, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-twitch:before {
+  content: "\eaa3";
+}
+
+/* line 1725, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-vimeo:before {
+  content: "\eaa4";
+}
+
+/* line 1729, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-vimeo2:before {
+  content: "\eaa5";
+}
+
+/* line 1733, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-lanyrd:before {
+  content: "\eaa6";
+}
+
+/* line 1737, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-flickr:before {
+  content: "\eaa7";
+}
+
+/* line 1741, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-flickr2:before {
+  content: "\eaa8";
+}
+
+/* line 1745, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-flickr3:before {
+  content: "\eaa9";
+}
+
+/* line 1749, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-flickr4:before {
+  content: "\eaaa";
+}
+
+/* line 1753, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-dribbble:before {
+  content: "\eaab";
+}
+
+/* line 1757, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-behance:before {
+  content: "\eaac";
+}
+
+/* line 1761, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-behance2:before {
+  content: "\eaad";
+}
+
+/* line 1765, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-deviantart:before {
+  content: "\eaae";
+}
+
+/* line 1769, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-500px:before {
+  content: "\eaaf";
+}
+
+/* line 1773, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-steam:before {
+  content: "\eab0";
+}
+
+/* line 1777, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-steam2:before {
+  content: "\eab1";
+}
+
+/* line 1781, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-dropbox:before {
+  content: "\eab2";
+}
+
+/* line 1785, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-onedrive:before {
+  content: "\eab3";
+}
+
+/* line 1789, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-github:before {
+  content: "\eab4";
+}
+
+/* line 1793, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-npm:before {
+  content: "\eab5";
+}
+
+/* line 1797, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-basecamp:before {
+  content: "\eab6";
+}
+
+/* line 1801, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-trello:before {
+  content: "\eab7";
+}
+
+/* line 1805, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-wordpress:before {
+  content: "\eab8";
+}
+
+/* line 1809, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-joomla:before {
+  content: "\eab9";
+}
+
+/* line 1813, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-ello:before {
+  content: "\eaba";
+}
+
+/* line 1817, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-blogger:before {
+  content: "\eabb";
+}
+
+/* line 1821, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-blogger2:before {
+  content: "\eabc";
+}
+
+/* line 1825, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-tumblr:before {
+  content: "\eabd";
+}
+
+/* line 1829, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-tumblr2:before {
+  content: "\eabe";
+}
+
+/* line 1833, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-yahoo:before {
+  content: "\eabf";
+}
+
+/* line 1837, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-yahoo2:before {
+  content: "\eac0";
+}
+
+/* line 1841, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-tux:before {
+  content: "\eac1";
+}
+
+/* line 1845, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-appleinc:before {
+  content: "\eac2";
+}
+
+/* line 1849, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-finder:before {
+  content: "\eac3";
+}
+
+/* line 1853, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-android:before {
+  content: "\eac4";
+}
+
+/* line 1857, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-windows:before {
+  content: "\eac5";
+}
+
+/* line 1861, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-windows8:before {
+  content: "\eac6";
+}
+
+/* line 1865, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-soundcloud:before {
+  content: "\eac7";
+}
+
+/* line 1869, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-soundcloud2:before {
+  content: "\eac8";
+}
+
+/* line 1873, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-skype:before {
+  content: "\eac9";
+}
+
+/* line 1877, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-reddit:before {
+  content: "\eaca";
+}
+
+/* line 1881, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-hackernews:before {
+  content: "\eacb";
+}
+
+/* line 1885, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-wikipedia:before {
+  content: "\eacc";
+}
+
+/* line 1889, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-linkedin:before {
+  content: "\eacd";
+}
+
+/* line 1893, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-linkedin2:before {
+  content: "\eace";
+}
+
+/* line 1897, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-lastfm:before {
+  content: "\eacf";
+}
+
+/* line 1901, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-lastfm2:before {
+  content: "\ead0";
+}
+
+/* line 1905, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-delicious:before {
+  content: "\ead1";
+}
+
+/* line 1909, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-stumbleupon:before {
+  content: "\ead2";
+}
+
+/* line 1913, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-stumbleupon2:before {
+  content: "\ead3";
+}
+
+/* line 1917, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-stackoverflow:before {
+  content: "\ead4";
+}
+
+/* line 1921, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-pinterest:before {
+  content: "\ead5";
+}
+
+/* line 1925, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-pinterest2:before {
+  content: "\ead6";
+}
+
+/* line 1929, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-xing:before {
+  content: "\ead7";
+}
+
+/* line 1933, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-xing2:before {
+  content: "\ead8";
+}
+
+/* line 1937, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-flattr:before {
+  content: "\ead9";
+}
+
+/* line 1941, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-foursquare:before {
+  content: "\eada";
+}
+
+/* line 1945, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-yelp:before {
+  content: "\eadb";
+}
+
+/* line 1949, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-paypal:before {
+  content: "\eadc";
+}
+
+/* line 1953, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-chrome:before {
+  content: "\eadd";
+}
+
+/* line 1957, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-firefox:before {
+  content: "\eade";
+}
+
+/* line 1961, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-IE:before {
+  content: "\eadf";
+}
+
+/* line 1965, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-edge:before {
+  content: "\eae0";
+}
+
+/* line 1969, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-safari:before {
+  content: "\eae1";
+}
+
+/* line 1973, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-opera:before {
+  content: "\eae2";
+}
+
+/* line 1977, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-file-pdf:before {
+  content: "\eae3";
+}
+
+/* line 1981, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-file-openoffice:before {
+  content: "\eae4";
+}
+
+/* line 1985, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-file-word:before {
+  content: "\eae5";
+}
+
+/* line 1989, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-file-excel:before {
+  content: "\eae6";
+}
+
+/* line 1993, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-libreoffice:before {
+  content: "\eae7";
+}
+
+/* line 1997, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-html-five:before {
+  content: "\eae8";
+}
+
+/* line 2001, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-html-five2:before {
+  content: "\eae9";
+}
+
+/* line 2005, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-css3:before {
+  content: "\eaea";
+}
+
+/* line 2009, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-git:before {
+  content: "\eaeb";
+}
+
+/* line 2013, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-codepen:before {
+  content: "\eaec";
+}
+
+/* line 2017, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-svg:before {
+  content: "\eaed";
+}
+
+/* line 2021, ../../../../resources/assets/sass/common/icon/_fonts.scss */
+.jim-icon-IcoMoon:before {
+  content: "\eaee";
+}
+
+/* line 6, ../../../../resources/assets/sass/common/_header.scss */
+.top-section {
+  height: 5rem;
+  box-shadow: 0 0.5px 0 0 #dee3e8;
+}
+/* line 10, ../../../../resources/assets/sass/common/_header.scss */
+.top-section .operates {
+  height: 5rem;
+  line-height: 5rem;
+}
+/* line 13, ../../../../resources/assets/sass/common/_header.scss */
+.top-section .operates button {
+  width: 5rem;
+  height: 1.875rem;
+  border: solid 0.5px #dadee3;
+  opacity: 0.5;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.875rem;
+  -moz-border-radius: 0.125rem;
+  -webkit-border-radius: 0.125rem;
+  border-radius: 0.125rem;
+  cursor: pointer;
+}
+/* line 27, ../../../../resources/assets/sass/common/_mixins.scss */
+.top-section .operates button.active {
+  background-color: #1663ba;
+  box-shadow: 0 0.5px 1.5px 0 rgba(45, 75, 126, 0.2);
+  color: #fff;
+}
+
+/* line 2, ../../../../resources/assets/sass/plugins/steps/_mixins.scss */
+ol.progresses[data-steps="4"] li {
+  width: 25%;
+}
+
+/* line 8, ../../../../resources/assets/sass/plugins/steps/steps.scss */
+.progresses {
+  width: 100%;
+  list-style: none none;
+  margin: 20px 0;
+  padding: 0;
+}
+/* line 14, ../../../../resources/assets/sass/plugins/steps/steps.scss */
+.progresses li {
+  float: left;
+  text-align: center;
+  position: relative;
+}
+/* line 19, ../../../../resources/assets/sass/plugins/steps/steps.scss */
+.progresses li .step {
+  color: #ffffff;
+  font-weight: 600;
+  border: 3px solid #eaeaea;
+  background-color: #eaeaea;
+  border-radius: 50%;
+  line-height: 1.2;
+  width: 2rem;
+  height: 2rem;
+  display: inline-block;
+  padding: 0.1875rem 0;
+  z-index: 0;
+}
+/* line 33, ../../../../resources/assets/sass/plugins/steps/steps.scss */
+.progresses li .step:before {
+  content: "";
+  display: block;
+  background-color: #eaeaea;
+  height: 0.2rem;
+  width: 50%;
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  z-index: -2;
+}
+/* line 45, ../../../../resources/assets/sass/plugins/steps/steps.scss */
+.progresses li .step:after {
+  content: "";
+  display: block;
+  background-color: #eaeaea;
+  height: 0.2rem;
+  width: 50%;
+  position: absolute;
+  top: 1rem;
+  right: 0;
+  z-index: -2;
+}
+/* line 58, ../../../../resources/assets/sass/plugins/steps/steps.scss */
+.progresses li .name {
+  display: block;
+  vertical-align: bottom;
+  text-align: center;
+  color: black;
+  font-size: 0.5625rem;
+  padding: 0.625rem;
+}
+/* line 69, ../../../../resources/assets/sass/plugins/steps/steps.scss */
+.progresses li.active .name, .progresses li.active .step span {
+  opacity: 1;
+  font-weight: 600;
+}
+/* line 74, ../../../../resources/assets/sass/plugins/steps/steps.scss */
+.progresses li.active .step {
+  border: 3px solid #1663ba;
+  background-color: #1663ba;
+}
+/* line 79, ../../../../resources/assets/sass/plugins/steps/steps.scss */
+.progresses li.active .name {
+  color: #000;
+}
+/* line 84, ../../../../resources/assets/sass/plugins/steps/steps.scss */
+.progresses li.active .step:before {
+  content: "";
+  display: block;
+  background-color: #1663ba;
+  height: 0.2rem;
+  width: 50%;
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  z-index: -2;
+}
+/* line 96, ../../../../resources/assets/sass/plugins/steps/steps.scss */
+.progresses li.active .step:after {
+  content: "";
+  display: block;
+  background-color: #eaeaea;
+  height: 0.2rem;
+  width: 50%;
+  position: absolute;
+  top: 1rem;
+  right: 0;
+  z-index: -2;
+}
+/* line 110, ../../../../resources/assets/sass/plugins/steps/steps.scss */
+.progresses li.done .step {
+  border: 3px solid #1663ba;
+  background-color: #1663ba;
+}
+/* line 115, ../../../../resources/assets/sass/plugins/steps/steps.scss */
+.progresses li.done .name, .progresses li.done .step span {
+  opacity: 1;
+}
+/* line 119, ../../../../resources/assets/sass/plugins/steps/steps.scss */
+.progresses li.done .name {
+  color: #000;
+}
+/* line 123, ../../../../resources/assets/sass/plugins/steps/steps.scss */
+.progresses li.done .step:before {
+  content: "";
+  display: block;
+  background-color: #1663ba;
+  height: 0.2rem;
+  width: 50%;
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  z-index: -2;
+}
+/* line 135, ../../../../resources/assets/sass/plugins/steps/steps.scss */
+.progresses li.done .step:after {
+  content: "";
+  display: block;
+  background-color: #1663ba;
+  height: 0.2rem;
+  width: 50%;
+  position: absolute;
+  top: 1rem;
+  right: 0;
+  z-index: -2;
+}
+/* line 150, ../../../../resources/assets/sass/plugins/steps/steps.scss */
+.progresses li:first-of-type .step:before, .progresses li:last-of-type .step:after {
+  display: none;
+}

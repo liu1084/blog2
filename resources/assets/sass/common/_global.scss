@@ -4,3 +4,7 @@ body {
 	font-family: $fontFamily;
 	font-size: $fontSize;
 }
+
+ul, ol, li{
+	list-style: none;
+}
