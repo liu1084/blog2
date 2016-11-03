@@ -1,0 +1,18 @@
+@import "../config/config";
+@import "mixins";
+
+$header: (height: 80 * $onePx, width: 100%, padding: 24 * $onePx, color: #000);
+$logo: (height: 32 * $onePx, width: 32 * $onePx, opacity: 0);
+
+header {
+	font-size: 14 * $onePx;
+	text-decoration: none;
+	color: map_get($header, 'color');
+
+	.nav-item {
+		display: inline-block;
+		padding: 10 * $onePx;
+		height: 20 * $onePx;
+		width: 40 * $onePx;
+	}
+}
