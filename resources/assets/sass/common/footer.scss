@@ -1,0 +1,12 @@
+@import "../config/config";
+
+$footer: (height: 260 * $onePx, width: 100%, padding: 40 * $onePx, color: #000);
+footer{
+	width: map_get($footer, 'width');
+	text-align: center;
+	height: map_get($footer, 'height');
+	padding: map_get($footer, 'padding') 0;
+	li {
+		display: inline-block;
+	}
+}

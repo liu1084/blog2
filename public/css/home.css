@@ -63,13 +63,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 3, ../../resources/assets/sass/common/_global.scss */
+/* line 5, ../../resources/assets/sass/common/_global.scss */
 body {
   font-family: "Microsoft YaHei", "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
   font-size: 16px;
 }
 
-/* line 8, ../../resources/assets/sass/common/_global.scss */
+/* line 10, ../../resources/assets/sass/common/_global.scss */
 ul, ol, li {
   list-style: none;
 }
@@ -83,7 +83,7 @@ ul, ol, li {
 
 @font-face {
   font-family: "jim-font";
-  src: url('../../fonts/../fonts/icomoon.eot') format('embedded-opentype'), url('../../fonts/../fonts/icomoon.svg') format('svg'), url('../../fonts/../fonts/icomoon.ttf') format('truetype'), url('../../fonts/../fonts/icomoon.woff') format('woff');
+  src: url('../../resources/assets/sass/common/fonts/../fonts/icomoon.eot?1477410147') format('embedded-opentype'), url('../../resources/assets/sass/common/fonts/../fonts/icomoon.svg?1477410147') format('svg'), url('../../resources/assets/sass/common/fonts/../fonts/icomoon.ttf?1477410147') format('truetype'), url('../../resources/assets/sass/common/fonts/../fonts/icomoon.woff?1477410147') format('woff');
 }
 /* line 10, ../../resources/assets/sass/common/icon/_fonts.scss */
 [class^="jim-icon-"], [class*=" jim-icon "] {
@@ -2599,33 +2599,7 @@ ul, ol, li {
   content: "\eaee";
 }
 
-/* line 6, ../../resources/assets/sass/common/_header.scss */
-.top-section {
-  height: 5rem;
-  box-shadow: 0 0.5px 0 0 #dee3e8;
-}
-/* line 10, ../../resources/assets/sass/common/_header.scss */
-.top-section .operates {
-  height: 5rem;
-  line-height: 5rem;
-}
-/* line 13, ../../resources/assets/sass/common/_header.scss */
-.top-section .operates button {
-  width: 5rem;
-  height: 1.875rem;
-  border: solid 0.5px #dadee3;
-  opacity: 0.5;
-  text-align: center;
-  font-weight: bold;
-  font-size: 0.875rem;
-  -moz-border-radius: 0.125rem;
-  -webkit-border-radius: 0.125rem;
-  border-radius: 0.125rem;
-  cursor: pointer;
-}
-/* line 27, ../../resources/assets/sass/common/_mixins.scss */
-.top-section .operates button.active {
-  background-color: #1663ba;
-  box-shadow: 0 0.5px 1.5px 0 rgba(45, 75, 126, 0.2);
-  color: #fff;
+/* line 2, ../../resources/assets/sass/home.scss */
+.main {
+  position: relative;
 }

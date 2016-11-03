@@ -7,7 +7,9 @@ $fontSize: 16px;
 $fontFamily: "Microsoft YaHei", "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
 
 //breakpoint
-$breakpoint-sm: 554 * $onePx;
-$breakpoint-md: 768 * $onePx;
-$breakpoint-lg: 992 * $onePx;
-$breakpoint-xl: 1200 * $onePx;
+$breakpoint: (
+		sm: 554 * $onePx,
+		md: 768 * $onePx,
+		lg: 992 * $onePx,
+		xl: 1200 * $onePx
+);

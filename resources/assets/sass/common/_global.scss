@@ -1,5 +1,7 @@
 @import "variables";
 @import "compass/reset";
+@import "breakpoint";
+
 body {
 	font-family: $fontFamily;
 	font-size: $fontSize;
@@ -7,4 +9,19 @@ body {
 
 ul, ol, li{
 	list-style: none;
+}
+
+.main {
+	@include breakpoint(map_get($breakpoint, sm)){
+
+	};
+	@include breakpoint(map_get($breakpoint, md)){
+
+	};
+	@include breakpoint(map_get($breakpoint, lg)){
+
+	};
+	@include breakpoint(map_get($breakpoint, xl)){
+
+	};
 }

@@ -1,18 +1,43 @@
 @import "../config/config";
 @import "mixins";
 
-$header: (height: 80 * $onePx, width: 100%, padding: 24 * $onePx, color: #000);
+$header: (height: 60 * $onePx, width: 100%, padding: 24 * $onePx, color: #000);
 $logo: (height: 32 * $onePx, width: 32 * $onePx, opacity: 0);
 
-header {
-	font-size: 14 * $onePx;
+.header{
 	text-decoration: none;
 	color: map_get($header, 'color');
+	height: map_get($header, 'height');
+	line-height: map_get($header, 'height');
 
-	.nav-item {
-		display: inline-block;
-		padding: 10 * $onePx;
-		height: 20 * $onePx;
-		width: 40 * $onePx;
-	}
+	@include breakpoint(max-width map_get($breakpoint, md)){
+		font-size: 12 * $onePx;
+		.nav-item {
+			display: block;
+			padding: 10 * $onePx;
+			height: 20 * $onePx;
+		}
+
+		form {
+			display: block;
+		}
+	};
+
+	@include breakpoint(map_get($breakpoint, lg)){
+		font-size: 14 * $onePx;
+		text-align: center;
+		.nav-item {
+			display: inline-block;
+			padding: 5 * $onePx 10 * $onePx;
+			height: 20 * $onePx;
+			line-height: 20 * $onePx;
+		}
+
+		form {
+			display: inline-block;
+			button {
+				@include button();
+			}
+		}
+	};
 }

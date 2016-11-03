@@ -9,43 +9,44 @@
     <meta name="base" content="{{route('base')}}">
     <title>@yield('title')</title>
 
-    <!-- Styles -->
+    <!-- Common Styles Vendors-->
     <link href="/bower_components/normalize-css/normalize.css" rel="stylesheet"/>
     <link href="/bower_components/highlight/src/styles/github-gist.css" rel="stylesheet"/>
     <link href="/bower_components/PACE/themes/black/pace-theme-minimal.css" rel="stylesheet"/>
     <link href="/bower_components/tinymce/skins/lightgray/skin.min.css" rel="stylesheet"/>
+
+    <!-- Common Styles -->
+    <link href="/css/common/header.css" rel="stylesheet" />
+    <link href="/css/common/footer.css" rel="stylesheet" />
     <!-- Current Page css-->
     @yield('css')
 </head>
 <body>
 
 <header class="header">
-    <ul>
-        <li class="logo blog"></li>
-        <li>Home</li>
-        <li>Lasted</li>
-        <li>News</li>
-        <li>Categories</li>
-        <li>Explore</li>
-        <li>Support</li>
-        <li>
-            <input type="text" value="" placeholder="Search post"/>
-            <button>Search</button>
-        </li>
-        <li>
-            <button>Sign in</button>
-        </li>
-        <li>
-            <button>Sign up</button>
-        </li>
-    </ul>
+    <nav>
+        <a class="nav-item logo"></a>
+        <a class="nav-item">Home</a>
+        <a class="nav-item">Lasted post</a>
+        <a class="nav-item">News</a>
+        <a class="nav-item">Categories</a>
+        <a class="nav-item">Explore</a>
+        <a class="nav-item">Support</a>
+        <a class="nav-item">About me</a>
+        <form>
+            <input class="search" type="text" placeholder="Search post"/>
+            <button class="button sign-in">Sign in</button>
+            <button class="button sign-up">Sign up</button>
+        </form>
+        <a class="nav-item">Login</a>
+        <a class="nav-item">Register</a>
+    </nav>
 </header>
 
 @yield('content')
 
 <footer class="footer">
     <ul>
-        <li>About me</li>
         <li>Email to</li>
         <li>Help</li>
     </ul>
