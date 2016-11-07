@@ -48,6 +48,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
+//Articles
+Route::get('articles/create', 'ArticleController@create')->middleware('auth');
 Route::post('articles/store', 'ArticleController@store')->middleware('auth');
 Route::get('articles', 'ArticleController@index')->middleware('cors');
-//Route::resource('articles', 'ArticleController');
+Route::resource('articles', 'ArticleController');

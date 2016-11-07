@@ -14,7 +14,7 @@
 				function (articles) {
 					Vue.component('article-item', {
 						props: ['article'],
-						template: '<li><img src="{{ article.background }}" alt="{{article.title}}" </li>'
+						template: '<li><img v-bind:src="article.background" width="200" height="300"><p>{{article.title}}</p></li>'
 					});
 
 					new Vue({
@@ -26,12 +26,11 @@
 
 					//wookmark
 					options = {
-						autoResize: true, // This will auto-update the layout when the browser window is resized.
-						offset: 10, // Optional, the distance between grid items
-						outerOffset: 20, // Optional the distance from grid to parent
-						itemWidth: 210 // Optional, the width of a grid item
+						container: $('#articles'),
+						offset: 10,
+						itemWidth: 200
 					};
-					$('#articles').find('li').wookmark(options);
+					$('#articles li').wookmark(options);
 				},
 				function (errors) {
 

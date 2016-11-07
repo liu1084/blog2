@@ -2599,7 +2599,11 @@ ul, ol, li {
   content: "\eaee";
 }
 
-/* line 2, ../../resources/assets/sass/home.scss */
-.main {
+/* line 4, ../../resources/assets/sass/home.scss */
+.main #articles {
   position: relative;
+}
+/* line 7, ../../resources/assets/sass/home.scss */
+.main #articles li {
+  display: none;
 }

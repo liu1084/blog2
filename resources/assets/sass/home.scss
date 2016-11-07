@@ -1,4 +1,11 @@
 @import "config/config";
-.main{
-	position: relative;
+
+.main {
+	#articles {
+		position: relative;
+
+		li {
+			display: none;
+		}
+	}
 }

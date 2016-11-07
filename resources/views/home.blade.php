@@ -1,9 +1,12 @@
 @extends('layouts.app')
+@section('css')
+    <link rel="stylesheet" href="css/home.css"/>
+@endsection
 
 @section('content')
-    <div class="main" id="articles">
-        <ul>
-            <article-item v-for="article in articles" v-bind:article="article"></article-item>
+    <div class="main">
+        <ul id="articles">
+            <li is="article-item" v-for="article in articles" v-bind:article="article"></li>
         </ul>
     </div>
 @endsection
